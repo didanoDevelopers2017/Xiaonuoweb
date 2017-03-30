@@ -11,17 +11,6 @@
 </head>
 
 <body>
- <!---
-<div class="header">
-    <div class="paper"> 
-      <h1>欢迎来到谛达诺官方网站</h1>
-     
-      <h2>16:30</h2>
-      <h2>2016年9月20日</h2>
-      
-    </div>
-</div>
---->
 <br>
 <div class="bar">
   <div class="paper">
@@ -76,8 +65,35 @@
 </div>
 
 <div class="line"></div>
-<div class="declaration">蜀ICP备16008823号<br>©2016 didano Telecom Equipment Co., Ltd. All rights reserved.</div> 
+<div id="qrcode_div">
+        <img src="./img/qrcode.png" longdesc="./img/qrcode.png" style="width:140px;" class="qrcode_img">
+        <div class="qrcode_tips">
+          扫描二维码<br>
+          关注小诺健康机器人微信公众账户
+        </div>
+        <div class="triangle">
+        </div>
+    </div>
+    <div class="declaration">
+        <div class="padding-bottom-10">蜀ICP备16008823号</div>
+        <div>©2016 didanuo Telecom Equipment Co., Ltd. All rights reserved.</div>
+        <div class="weixin_div">
+          <img src="./img/weixin.jpg" longdesc="./img/weixin.jpg" style="width:40px;" id="weixin_img">
+        </div>
+    </div> 
 
+  </body>
 
-</body>
+   <script type="text/javascript">
+      window.onload=function(){
+          var weixinNode = document.getElementById('weixin_img');
+          var qrcdoeDiv = document.getElementById('qrcode_div');
+          weixinNode.onmouseover = function(){
+            qrcdoeDiv.style.display = 'block';
+          }
+          weixinNode.onmouseout = function(){
+            qrcdoeDiv.style.display = 'none';
+          }
+      }
+   </script>
 </html>
